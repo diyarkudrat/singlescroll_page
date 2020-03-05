@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(background2.jpg) no-repeat 50% 50%;
+    display: table;
+    background-size: cover;
+
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30%;
+}
+
+.content h1 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    color: white;
+    line-height: 70%;
+}
+ 
+.btn {
+    font-family: 'Montserrat';
+    font-style: 135%;
+    font-weight: 300;
+    color: wheat;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    color: black;
+    border: solid #CBDFD6 2px;
+}
+
+p {
+    font-size: 150%;
+    line-height: 100%;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+
+.content h1 {
+    font-family: 'Yantramanav';
+    font-size: 500%;
+}
+
+.container {
+    height: 100%;
+}
+
+.container > div {
+height: 100%;
+display: flex;
+justify-content: center;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b {
+    background-color: #52a2c7;
+}
+
+.c {
+    background-color: #52aac7;
+}
+
+.d {
+    background-color: #52b5c7;
+}
+
+.e {
+    background-color: #52c1c7;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .navbar {
+    position: fixed;
+    left: 0;
+    top: 41%;
+    transform: translate(0, -100%);
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+}
+
+.navbar > a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
+}
+
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+    .content {
+        padding-bottom: 30%;
+    }
+    .content h1 {
+        font-size: 400%;
+    }
+    .btn {
+        font-size: 100%;
+        padding: 8px 16px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .content {
+        padding-bottom: 40%;
+    }
+    .content h1 {
+        font-size: 300%;
+    }
+    .btn {
+        font-size: 80%;
+        padding: 7px 15px;
+    }
+    p {
+        font-size: 80%;
+        line-height: 90%;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .content {
+        padding-bottom: 30%;
+    }
+    .content h1 {
+        font-size: 250%;
+    }
+    .btn {
+        font-size: 80%;
+        padding: 6px 14px;
+    }
+    p {
+        font-size: 60%;
+        line-height: 70%;
+    }
+	
+}
